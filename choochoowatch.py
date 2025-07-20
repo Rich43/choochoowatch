@@ -121,9 +121,6 @@ def fetch_trains():
     except Exception as e:
         log(f"Error fetching train data: {e}")
         return []
-    except Exception as e:
-        log(f"Error fetching train data: {e}")
-        return []
 
 def estimate_time_to_crossing(train, crossing_coord):
     loc = train.get("location", {})
