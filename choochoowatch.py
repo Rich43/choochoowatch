@@ -10,7 +10,7 @@ import logging
 POSTCODE = "CV1 4AR"
 MARGIN_SEC = 90
 POLL_INTERVAL = 20
-SIGNALBOX_API = "https://map-api.production.signalbox.io//api/locations"
+SIGNALBOX_API = "https://map-api.production.signalbox.io/api/locations"
 RENTRY_SECRET_FILE = "rentry_secret.txt"
 
 # Logging

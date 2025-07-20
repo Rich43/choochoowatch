@@ -2,7 +2,7 @@ Sample output:
 
 PS C:\Users\richa\Downloads> python .\choochoowatch.py
 📍 Monitoring crossing at (52.41217, -1.52129) (margin 90s)
-Fetching train data from: https://map-api.production.signalbox.io//api/locations
+Fetching train data from: https://map-api.production.signalbox.io/api/locations
 Train data response code: 200
 Response snippet:  { " t r a i n _ l o c a t i o n s " : [ { " d e l a y " : 0 . 0 , " l o c a t i o n " : { " l a t " : 5 2 . 9 0 8 3 8 6 , " l o n " : - 2 . 1 5 4 7 7 2 } , " p r e d i c t e d _ l o c a t i o n " : { " l a t " : 5 2 . 9 0 2 0 1 6 , " l o n " : - 2 . 1 4 0 9 6 9 3 } , " p r e d i c t e d _ t s " : " 2 0 2 5 - 0 7 - 2 0 T 1 3 : 0 1 : 4 4 + 0 0 : 0 0 " , " r i d " : " 2 0 2 5 0 7 2 0 8 7 0 9 2 2 8 " , " t o c _ c o d e " : " V T " , " t s " : " 2 0 2 5 - 0 7 - 2 0 T 1 3 : 0 1 : 1 4 + 0 0 : 0 0 " } , { " d e l a y " : 1 7 . 0 , " l o c a t i o n " : { " l a t " : 5 3 . 9 0 7 1 2 4 , " l o n " : - ...
 Retrieved 1049 train location entries
@@ -1059,7 +1059,7 @@ Train 202507208710340 at (51.534985, -0.1441864) is 135.69 km from crossing, est
 Train 202507208966536 at (55.185566, -3.7267144) is 340.66 km from crossing, est ETA: 15329.9s
 Fetched Rentry homepage: 200
 Rentry update error: Failed to retrieve CSRF token from Rentry
-Fetching train data from: https://map-api.production.signalbox.io//api/locations
+Fetching train data from: https://map-api.production.signalbox.io/api/locations
 Train data response code: 200
 Response snippet:  { " t r a i n _ l o c a t i o n s " : [ { " d e l a y " : 0 . 0 , " l o c a t i o n " : { " l a t " : 5 2 . 9 0 8 3 8 6 , " l o n " : - 2 . 1 5 4 7 7 2 } , " p r e d i c t e d _ l o c a t i o n " : { " l a t " : 5 2 . 9 0 2 0 1 6 , " l o n " : - 2 . 1 4 0 9 6 9 3 } , " p r e d i c t e d _ t s " : " 2 0 2 5 - 0 7 - 2 0 T 1 3 : 0 1 : 4 4 + 0 0 : 0 0 " , " r i d " : " 2 0 2 5 0 7 2 0 8 7 0 9 2 2 8 " , " t o c _ c o d e " : " V T " , " t s " : " 2 0 2 5 - 0 7 - 2 0 T 1 3 : 0 1 : 1 4 + 0 0 : 0 0 " } , { " d e l a y " : 1 7 . 0 , " l o c a t i o n " : { " l a t " : 5 3 . 9 0 7 1 2 4 , " l o n " : - ...
 Retrieved 1049 train location entries
@@ -2134,7 +2134,7 @@ PS C:\Users\richa\Downloads>
 PS C:\Users\richa\Downloads>
 PS C:\Users\richa\Downloads> python .\choochoowatch.py
 📍 Monitoring crossing at (52.41217, -1.52129) (margin 90s)
-Fetching train data from: https://map-api.production.signalbox.io//api/locations
+Fetching train data from: https://map-api.production.signalbox.io/api/locations
 Train data response code: 200
 Response snippet:  { " t r a i n _ l o c a t i o n s " : [ { " d e l a y " : 0 . 0 , " l o c a t i o n " : { " l a t " : 5 1 . 2 4 6 2 5 4 , " l o n " : - 0 . 7 5 9 9 4 6 5 } , " p r e d i c t e d _ l o c a t i o n " : { " l a t " : 5 1 . 2 4 6 2 5 4 , " l o n " : - 0 . 7 5 9 9 4 6 5 } , " p r e d i c t e d _ t s " : " 2 0 2 5 - 0 7 - 2 0 T 1 3 : 0 5 : 1 4 + 0 0 : 0 0 " , " r i d " : " 2 0 2 5 0 7 2 0 7 6 4 8 4 8 1 " , " t o c _ c o d e " : " S W " , " t s " : " 2 0 2 5 - 0 7 - 2 0 T 1 3 : 0 4 : 4 4 + 0 0 : 0 0 " } , { " d e l a y " : 7 . 0 , " l o c a t i o n " : { " l a t " : 5 5 . 6 2 2 0 4 4 , " l o n " : - ...
 Retrieved 1044 train location entries
