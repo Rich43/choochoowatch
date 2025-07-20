@@ -143,19 +143,22 @@ def haversine(lat1, lon1, lat2, lon2):
 def main():
     crossing = get_crossing_coords(POSTCODE)
     log(f"📍 Monitoring crossing at {crossing} (margin {MARGIN_SEC}s)")
-    while True:
-        trains = fetch_trains()
-        for t in trains:
-            if not isinstance(t, dict):
-                continue
-            try:
-                eta = estimate_time_to_crossing(t, crossing)
-                if eta < MARGIN_SEC + POLL_INTERVAL:
-                    log(f"⚠️ Train approaching in ~{int(eta)}s")
-            except Exception as e:
-                log(f"Skipping train due to error: {e}")
-        update_rentry_log()
-        time.sleep(POLL_INTERVAL)
+    try:
+        while True:
+            trains = fetch_trains()
+            for t in trains:
+                if not isinstance(t, dict):
+                    continue
+                try:
+                    eta = estimate_time_to_crossing(t, crossing)
+                    if eta < MARGIN_SEC + POLL_INTERVAL:
+                        log(f"⚠️ Train approaching in ~{int(eta)}s")
+                except Exception as e:
+                    log(f"Skipping train due to error: {e}")
+            update_rentry_log()
+            time.sleep(POLL_INTERVAL)
+    except KeyboardInterrupt:
+        log("Shutdown requested, exiting...")
 
 if __name__ == "__main__":
     main()
