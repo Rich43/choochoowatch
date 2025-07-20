@@ -46,8 +46,6 @@ def create_rentry_spoofed(content="🚦 ChooChoo Log"):
     csrf = token_tag["value"].strip() if token_tag and token_tag.has_attr("value") else ""
     if not csrf:
         raise Exception("Failed to retrieve CSRF token from Rentry")
-    if not csrf:
-        raise Exception("Failed to retrieve CSRF token from Rentry")
 
     data = {
         "csrf-token": csrf,
