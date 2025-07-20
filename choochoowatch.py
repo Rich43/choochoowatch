@@ -112,7 +112,7 @@ def fetch_trains():
         resp = requests.get(SIGNALBOX_API)
         log(f"Train data response code: {resp.status_code}")
         resp.raise_for_status()
-        content_snippet = resp.text[:300].replace('', ' ').replace('', '')
+        content_snippet = resp.text[:300].replace('\n', ' ')
         log(f"Response snippet: {content_snippet}...")
         data = resp.json()
         train_locs = data.get("train_locations", [])
